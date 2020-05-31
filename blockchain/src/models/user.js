@@ -73,8 +73,7 @@ userSchema.statics.findUserByCredentials = async(email, password) => {
 
 userSchema.methods.generateAuthToken = async function(){
     const user = this;
-    const createdToken = jwt.sign({ email: user.email }, process.env.JWT_SECRET);
-
+    const createdToken = jwt.sign({ publicKey: user.publicKey }, 'secret');
     user.tokens = user.tokens.concat({ token: createdToken });
     await user.save();
     
@@ -84,7 +83,7 @@ userSchema.methods.generateAuthToken = async function(){
 userSchema.pre('save', async function(next){
     const user = this;
     if(user.isModified('password')){
-        user.password = await bcrypt.hash(user.password, 8)
+        user.password = await bcrypt.hash(user.password, 8);
     }
     next();
 })
