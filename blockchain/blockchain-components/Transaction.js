@@ -18,9 +18,10 @@ class Transaction{
         if(this.from !== key.getPublic('hex')){
             throw new Error('Error: Cannot sign txn!')
         }
-
+        console.log(key);
         const hashTx = this.calculateHash();
         const signature = key.sign(hashTx, 'base64');
+        console.log(signature);
         this.signature = signature.toDER('hex');
     }
 

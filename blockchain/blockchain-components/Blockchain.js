@@ -76,6 +76,10 @@ class Blockchain{
         }
         return true;
     }
+
+    getPendingTxns(){
+        return this.pendingTxns;
+    }
 }
 
 module.exports = Blockchain;

@@ -1,8 +1,12 @@
 const express = require('express');
+const EC = require('elliptic').ec;
+const ec = new EC('secp256k1');
+const User = require('../models/user');
+require('../db/mongoose');
 
 const router = new express.Router();
 
-router.post('/signup', async(req, res) => {
+router.post('/auth/signup', async(req, res) => {
     try{
         const name = req.body.name;
         const email = req.body.email;
@@ -10,7 +14,8 @@ router.post('/signup', async(req, res) => {
         const password = req.body.password;
         
         const key = ec.genKeyPair();
-        const publicKey = key.getPublic('hex');
+        console.log(key)
+        const publicKey = key.getPublic('hex').toString();
 
         const user = new User({
             name,
@@ -30,6 +35,7 @@ router.post('/signup', async(req, res) => {
         });
         
     }catch(e){
+        console.log(e);
         res.status(500).send(e);
     }
 });

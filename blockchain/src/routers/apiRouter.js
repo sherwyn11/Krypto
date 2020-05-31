@@ -7,13 +7,12 @@ const Transaction = require('../../blockchain-components/Transaction');
 const User = require('../models/user');
 require('../db/mongoose');
 
-// const blockchain = new Blockchain(2);
-
+const blockchain = new Blockchain(2);
 const router = new express.Router();
 
 router.get('/api/get-blockchain', auth, async(req, res) => {
 
-    const blockchain = new Blockchain(2);
+    // const blockchain = new Blockchain(2);
 
     try{
         ////////// Test //////////
@@ -41,6 +40,25 @@ router.get('/api/get-key', auth, (req, res) => {
     }catch(e){
         console.log(e)
         res.status(500).send({e});
+    }
+});
+
+router.post('/api/create-txn', auth, (req, res) => {
+    try{
+        const from_addr = req.body.my_addr;
+        const to_addr = req.body.recv_addr;
+        const amount = Number(req.body.amount);
+        const tx = new Transaction(from_addr, to_addr, amount);
+        console.log(tx)
+        const key = ec.keyFromPublic(from_addr, 'hex');
+        tx.signTxn(key);
+        blockchain.addTxn(tx);
+
+        console.log(blockchain.getPendingTxns());
+        res.status(200).send({msg: 'Txn successful!'})
+    }catch(e){
+        console.log(e);
+        res.status(500).send({e :'Error'})
     }
 });
 
