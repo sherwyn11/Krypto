@@ -33,7 +33,6 @@ class ViewTransactions extends Component {
                 </tr>
             )
         });
-        console.log(txnsList)
         if(this.state.loading === false){
             return(
                 <div className="container">

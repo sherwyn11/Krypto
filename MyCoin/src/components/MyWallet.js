@@ -27,7 +27,7 @@ class MyWallet extends Component {
             return(
                 <div className="jumbotron">
                     <h1 className="display-4">My Wallet</h1>
-                    <p>You have <b>{this.state.balance} MyCoins in your account</b></p>
+                    <p>You have <b>{this.state.balance} Kryptos in your account</b></p>
                     <i>You Public Key is: <b>{this.state.publicKey}</b></i>
                     <br></br>
                     <br></br>
