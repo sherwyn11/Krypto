@@ -89,7 +89,7 @@ In Blockchain, this algorithm is used to confirm transactions and produce new bl
 <ul>
   <li>npm</li>
   <li>elliptic</li>
-  <li>crypto-js<li>
+  <li>crypto-js</li>
 </ul>
 
 # References
