@@ -40,13 +40,7 @@ Blockchain, sometimes referred to as Distributed Ledger Technology (DLT), makes 
 
 A simple analogy for understanding blockchain technology is a Google Doc. When we create a document and share it with a group of people, the document is distributed instead of copied or transferred. This creates a decentralized distribution chain that gives everyone access to the document at the same time. No one is locked out awaiting changes from another party, while all modifications to the doc are being recorded in real-time, making changes completely transparent.
 
-Of course, blockchain is more complicated than a Google Doc, but the analogy is apt because it illustrates three critical ideas of the technology:
-
-# BLOCKCHAIN EXPLAINED: A QUICK OVERVIEW
-Digital assets are distributed instead of copied or transferred.
-The asset is decentralized, allowing full real-time access.
-A transparent ledger of changes preserves integrity of the document, which creates trust in the asset.
-Blockchain is an especially promising and revolutionary technology because it helps reduce risk, stamps out fraud and brings transparency in a scaleable way for myriad uses. 
+Of course, blockchain is more complicated than a Google Doc, but the analogy is apt because it illustrates three critical ideas of the technology: 
 
 # How Does Blockchain Work?
 The whole point of using a blockchain is to let people — in particular, people who don't trust one another — share valuable data in a secure, tamperproof way.
