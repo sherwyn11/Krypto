@@ -1,6 +1,40 @@
 # Krypto
 A simple web app using ReactJS to demonstrate the working of a blockchain in cryptocurrency
 
+<img src="" />
+
+## Getting started
+1. Clone the repository
+```bash
+git clone https://github.com/sherwyn11/Krypto.git
+```
+2. Download the required npm packages
+```bash
+cd Krypto
+npm install
+```
+3. Start the React development server
+```bash
+npm start
+```
+
+## Working
+![](Readme_requirements/Krypto.gif)
+
+
+## What's happeninng behind the scenes
+<ul>
+  <li> The app generates a key pair(Public Key, Private key) using the elliptic npm package</li>
+  <li> The user can then create a transaction to the address(Public Key) of the receiver with the amount of Kryptos to be transferred</li>
+  <li>Once the transaction is made it is added to the Pending Transactions</li>
+  <li>Ideally, after this stage the miners will try to mine the pending transactions by solving a complex mathematical problem. This is a consensus algorithm called as <b>Proof of Work</b></li>
+  <li>Whichever miner solves the problem first will then add the block to the chain and obtain a reward of 100 Kryptos</li>
+  <li>The block is then added to the chain and every node gets a copy of the blockchain</li>
+  <li>Once the block is added every node checks the validity of the blockchain</li>
+  <li>A user can view his current balance of Kryptos in the 'MyWallet' section</li>
+  <li>A user can also view all transactions in a block by clicking on 'View Transactions' on the block of his/her choice</li>
+</ul>
+
 ## What is Blockchain Technology?
 Blockchain, sometimes referred to as Distributed Ledger Technology (DLT), makes the history of any digital asset unalterable and transparent through the use of decentralization and cryptographic hashing.  
 
@@ -51,19 +85,4 @@ Proof-of-Work, or PoW, is the original consensus algorithm in a Blockchain netwo
 
 In Blockchain, this algorithm is used to confirm transactions and produce new blocks to the chain. With PoW, miners compete against each other to complete transactions on the network and get rewarded.
 
-## Working
-![](Readme_requirements/Krypto.gif)
 
-
-## What's happeninng behind the scenes
-<ul>
-  <li> The app generates a key pair(Public Key, Private key) using the elliptic npm package</li>
-  <li> The user can then create a transaction to the address(Public Key) of the receiver with the amount of Kryptos to be transferred</li>
-  <li>Once the transaction is made it is added to the Pending Transactions</li>
-  <li>Ideally, after this stage the miners will try to mine the pending transaction by solving a complex mathematical problem called as <b>Proof of Work</b></li>
-  <li>Whichever miner solves the problem first will then add the block to the chain and obtain a reward of 100 Kryptos</li>
-  <li>The block is then added to the chain and every node gets a copy of the blockchain</li>
-  <li>Once the block is added every node checks the validity of the blockchain<li>
-  <li>A user can view his current balance of Kryptos in the 'MyWallet' section</li>
-  <li>A user can also view all transactions in a block by clicking on 'View Transactions' on the block of his/her choice</li>
-</ul>
