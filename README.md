@@ -19,7 +19,7 @@ npm start
 ```
 
 # Working
-![](Readme_requirements/Krypto.gif)
+<img src="Readme_requirements/Krypto.gif" height="500px" width="900px"/>
 
 
 # What's happeninng behind the scenes
