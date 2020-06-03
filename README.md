@@ -22,18 +22,18 @@ npm start
 <img src="Readme_requirements/Krypto.gif" height="500px" width="900px"/>
 
 
-# What's happeninng behind the scenes
+# What's happening behind the scenes
 <ul>
-  <li> The app generates a key pair(Public Key, Private key) using the elliptic npm package</li>
-  <li> The user can then create a transaction to the address(Public Key) of the receiver with the amount of Kryptos to be transferred</li>
+  <li> The app generates a key pair(Public Key, Private key) using the elliptic npm package.</li>
+  <li> The user can then create a transaction to the address(Public Key) of the receiver with the amount of Kryptos to be transferred.</li>
   <li>Each transaction is then hashed using SHA-256 hashing algorithm and then signed using the Private key of the sender</li>
-  <li>Once the transaction is made it is added to the Pending Transactions</li>
-  <li>Ideally, after this stage the miners will try to mine the pending transactions by solving a complex mathematical problem. This is a consensus algorithm called as <b>Proof of Work</b></li>
-  <li>Whichever miner solves the problem first will then add the block to the chain and obtain a reward of 100 Kryptos</li>
-  <li>The block is then added to the chain and every node gets a copy of the blockchain</li>
-  <li>Once the block is added every node checks the validity of the blockchain</li>
-  <li>A user can view his current balance of Kryptos in the 'MyWallet' section</li>
-  <li>A user can also view all transactions in a block by clicking on 'View Transactions' on the block of his/her choice</li>
+  <li>Once the transaction is made it is added to the Pending Transactions.</li>
+  <li>Ideally, after this stage the miners will try to mine the pending transactions by solving a complex mathematical problem. This is a consensus algorithm called as <b>Proof of Work</b>.</li>
+  <li>Whichever miner solves the problem first will then add the block to the chain and obtain a reward of 100 Kryptos.</li>
+  <li>The block is then added to the chain and every node gets a copy of the blockchain.</li>
+  <li>Once the block is added every node checks the validity of the blockchain.</li>
+  <li>A user can view his current balance of Kryptos in the 'MyWallet' section.</li>
+  <li>A user can also view all transactions in a block by clicking on 'View Transactions' on the block of his/her choice.</li>
 </ul>
 
 # What is the Blockchain Technology?
