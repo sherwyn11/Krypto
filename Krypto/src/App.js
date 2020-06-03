@@ -29,13 +29,6 @@ class App extends Component{
         }
     }
 
-    // updateKey = (pubKey) => {
-    //     let key = [...this.state.myPublicKey, pubKey];
-    //     this.setState({
-    //         myPublicKey: key
-    //     });
-    // }
-
     updateBalance = (balance) => {
         let bal = [...this.state.balance, balance];
         this.setState({
