@@ -36,7 +36,7 @@ npm start
   <li>A user can also view all transactions in a block by clicking on 'View Transactions' on the block of his/her choice.</li>
 </ul>
 
-# What is the Blockchain Technology?
+## What is the Blockchain Technology?
 Blockchain, sometimes referred to as Distributed Ledger Technology (DLT), makes the history of any digital asset unalterable and transparent through the use of decentralization and cryptographic hashing.  
 
 A simple analogy for understanding blockchain technology is a Google Doc. When we create a document and share it with a group of people, the document is distributed instead of copied or transferred. This creates a decentralized distribution chain that gives everyone access to the document at the same time. No one is locked out awaiting changes from another party, while all modifications to the doc are being recorded in real-time, making changes completely transparent.
