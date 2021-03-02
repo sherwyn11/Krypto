@@ -3,7 +3,7 @@ A simple web application using the ReactJS framework to demonstrate the working 
 
 <img src="Readme_requirements/logo.png" height="250px" width="350px"/>
 
-# Getting started
+## Getting started
 1. Clone the repository
 ```bash
 git clone https://github.com/sherwyn11/Krypto.git
@@ -18,11 +18,11 @@ npm install
 npm start
 ```
 
-# Working
+## Demo
 <img src="Readme_requirements/Krypto.gif" height="500px" width="900px"/>
 
 
-# What's happening behind the scenes
+## What's happening behind the scenes?
 <ul>
   <li> The app generates a key pair(Public Key, Private key) using the elliptic npm package.</li>
   <li> The user can then create a transaction to the address(Public Key) of the receiver with the amount of Kryptos to be transferred.</li>
@@ -43,13 +43,13 @@ A simple analogy for understanding blockchain technology is a Google Doc. When w
 
 Of course, blockchain is more complicated than a Google Doc, but the analogy is apt because it illustrates three critical ideas of the technology: 
 
-# How Does Blockchain Work?
+## How Does Blockchain Work?
 The whole point of using a blockchain is to let people — in particular, people who don't trust one another — share valuable data in a secure, tamperproof way.
 — MIT Technology Review
 
 Blockchain consists of three important concepts: blocks, nodes and miners.
 
-## Blocks
+### Blocks
 Every chain consists of multiple blocks and each block has three basic elements:
 
 The data in the block.
@@ -57,7 +57,7 @@ A 32-bit whole number called a nonce. The nonce is randomly generated when a blo
 The hash is a 256-bit number wedded to the nonce. It must start with a huge number of zeroes (i.e., be extremely small).
 When the first block of a chain is created, a nonce generates the cryptographic hash. The data in the block is considered signed and forever tied to the nonce and hash unless it is mined.  
 
-## Miners
+### Miners
 Miners create new blocks on the chain through a process called mining.
 
 In a blockchain every block has its own unique nonce and hash, but also references the hash of the previous block in the chain, so mining a block isn't easy, especially on large chains.
@@ -68,29 +68,29 @@ Making a change to any block earlier in the chain requires re-mining not just th
 
 When a block is successfully mined, the change is accepted by all of the nodes on the network and the miner is rewarded financially.
 
-## Nodes
+### Nodes
 One of the most important concepts in blockchain technology is decentralization. No one computer or organization can own the chain. Instead, it is a distributed ledger via the nodes connected to the chain. Nodes can be any kind of electronic device that maintains copies of the blockchain and keeps the network functioning. 
 
 Every node has its own copy of the blockchain and the network must algorithmically approve any newly mined block for the chain to be updated, trusted and verified. Since blockchains are transparent, every action in the ledger can be easily checked and viewed. Each participant is given a unique alphanumeric identification number that shows their transactions.
 
 Combining public information with a system of checks-and-balances helps the blockchain maintain integrity and creates trust among users. Essentially, blockchains can be thought of as the scaleability of trust via technology. 
 
-# What is Proof-of-Work?
+## What is Proof-of-Work?
 Proof-of-Work, or PoW, is the original consensus algorithm in a Blockchain network.
 
 In Blockchain, this algorithm is used to confirm transactions and produce new blocks to the chain. With PoW, miners compete against each other to complete transactions on the network and get rewarded.
 
-# Dependencies
+## Dependencies
 <ul>
   <li>npm</li>
   <li>elliptic</li>
   <li>crypto-js</li>
 </ul>
 
-# References
+## References
 <a href="https://developer.ibm.com/technologies/blockchain/tutorials/develop-a-blockchain-application-from-scratch-in-python/">Develop a blockchain application from scratch in Python</a>
 
-# License
+## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
