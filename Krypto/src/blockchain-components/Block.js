@@ -30,7 +30,6 @@ class Block{
         }
         return true;
     }
-
 }
 
 export default Block;
