@@ -1,5 +1,5 @@
 # Krypto
-A simple web application using the ReactJS framework to demonstrate the working of a Blockchain in <b>Cryptocurrency</b>
+A simple web application using the ReactJS framework to demonstrate the working of a Blockchain in <b>Cryptocurrency</b>.
 
 <img src="Readme_requirements/logo.png" height="250px" width="350px"/>
 
